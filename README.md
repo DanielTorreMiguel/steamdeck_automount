@@ -1,13 +1,13 @@
-# Plugin-Template
+# Steamdeck automount
 
-This is the template plugin for developing plugins for the [SteamOS Plugin Loader](https://github.com/SteamDeckHomebrew/PluginLoader).
+This is a plugin that mounts my external nvme drive.
 
 ## Usage
 
-1. Click on the green `Use this template` button to create a new repository for your plugin
-2. Rename the `plugin_template.py` file to something unique
-3. Add your code to the plugin's python and html files.
-4. To use it, simply `git clone` the repo into the `/home/deck/homebrew/plugins` folder on your Steam Deck
+1. Add an entry to /etc/fstab with your drive. Must have the "user" setting
+2. Replace the UUID in main.py with the UUID of your drive
+3. ????
+4. Profit
 
 ## License
 
