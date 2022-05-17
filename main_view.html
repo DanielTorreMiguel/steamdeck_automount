@@ -4,13 +4,13 @@
         <link rel="stylesheet" href="/steam_resource/css/39.css">
         <link rel="stylesheet" href="/steam_resource/css/library.css">
         <script src="/static/library.js"></script>
-        <script>
-            function mount() {
-                return call_plugin_method("mount", {});
-            }
-        </script>
     </head>
-    <body style="/*margin:0px;padding:0px;*/overflow-x:hidden;margin:0px;">
+    <body>
+		<script> 
+			async function mount() {
+                return call_plugin_method("py_mount", {});
+            }
+		</script>
         <button type="button" onclick="mount()">Mount!</button>
     </body>
 </html>

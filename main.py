@@ -1,14 +1,4 @@
+import os
 class Plugin:
-    # A normal method. It can be called from JavaScript using call_plugin_function("method_1", argument1, argument2)
-    async def method_1(self, *args):
-        pass
-
-    # A normal method. It can be called from JavaScript using call_plugin_function("method_2", argument1, argument2)
-    async def method_2(self, *args):
-        pass
-    async def mount():
-        import os
-        os.system("mount -a")
-    # Asyncio-compatible long-running code, executed in a task when the plugin is loaded
-    async def _main(self):
-        pass
+    async def py_mount(self, *args):
+        os.system("mount UUID=745da4fa-dbc5-4b7d-b334-3c3c9cd0607c")
